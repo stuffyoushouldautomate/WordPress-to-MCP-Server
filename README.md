@@ -70,7 +70,7 @@
 ## 🎨 Fun Interactive Demo
 
 We created a live interactive UI that shows random (and OpenAI-generated) use case ideas to help you imagine what’s possible:  
-👉 **See the Demo Site** *(Replace with your real link)*
+👉 **Demo coming soon...** 
 
 ---
 
