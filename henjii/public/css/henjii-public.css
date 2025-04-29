@@ -1,0 +1,37 @@
+<?php
+/**
+ * Public CSS for Henjii MCP Server
+ *
+ * Minimal styles for any public-facing elements
+ */
+.henjii-public {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.henjii-public-notice {
+    background-color: #f9f9f9;
+    border-left: 4px solid #2271b1;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 2px;
+}
+
+.henjii-public-notice.success {
+    border-left-color: #00a32a;
+}
+
+.henjii-public-notice.warning {
+    border-left-color: #f0b849;
+}
+
+.henjii-public-notice.error {
+    border-left-color: #cc1818;
+}
+
+.henjii-public-notice p {
+    margin: 0;
+}
+
+.henjii-public-notice p + p {
+    margin-top: 8px;
+}

@@ -1,0 +1,630 @@
+/* Admin styles for Henjii MCP Server - Dark Theme */
+
+:root {
+  --henjii-primary: #4361ee;
+  --henjii-primary-hover: #3a56d4;
+  --henjii-secondary: #7209b7;
+  --henjii-background: #121212;
+  --henjii-surface: #1e1e1e;
+  --henjii-surface-light: #2d2d2d;
+  --henjii-border: #333333;
+  --henjii-text: #e0e0e0;
+  --henjii-text-secondary: #a0a0a0;
+  --henjii-success: #4caf50;
+  --henjii-warning: #ff9800;
+  --henjii-error: #f44336;
+  --henjii-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* General Admin Styles */
+.henjii-admin {
+    /* max-width: 1200px; */
+    width: 100vw;
+    margin: 0;
+    padding: 20px 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--henjii-text);
+    background-color: var(--henjii-background);
+}
+
+.henjii-admin h1, .henjii-admin h2, .henjii-admin h3, .henjii-admin h4 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.henjii-admin h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--henjii-text);
+}
+
+.henjii-admin h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--henjii-text);
+}
+
+.henjii-admin h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--henjii-text);
+}
+
+.henjii-admin h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--henjii-text);
+}
+
+/* Logo and Header */
+.henjii-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.henjii-logo .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    color: var(--henjii-primary);
+}
+
+.henjii-logo h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.henjii-dashboard-header,
+.henjii-connection-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--henjii-border);
+}
+
+.henjii-status {
+    display: flex;
+    align-items: center;
+}
+
+.henjii-status-active,
+.henjii-status-enabled {
+    background-color: var(--henjii-success);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.henjii-status-inactive,
+.henjii-status-disabled {
+    background-color: var(--henjii-error);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.henjii-status-warning {
+    background-color: var(--henjii-warning);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Navigation Tabs */
+.henjii-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--henjii-border);
+}
+
+.henjii-tab {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: var(--henjii-text-secondary);
+    transition: all 0.3s ease;
+}
+
+.henjii-tab:hover {
+    color: var(--henjii-text);
+}
+
+.henjii-tab.active {
+    color: var(--henjii-primary);
+    border-bottom: 2px solid var(--henjii-primary);
+}
+
+/* Cards */
+.henjii-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.henjii-card {
+    background-color: var(--henjii-surface);
+    border: 1px solid var(--henjii-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--henjii-shadow);
+    overflow: hidden;
+}
+
+.henjii-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--henjii-surface-light);
+    border-bottom: 1px solid var(--henjii-border);
+}
+
+.henjii-card-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.henjii-card-content {
+    padding: 15px;
+}
+
+/* Stats */
+.henjii-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.henjii-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--henjii-surface-light);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.henjii-stat-number {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--henjii-primary);
+    margin-bottom: 5px;
+}
+
+.henjii-stat-label {
+    font-size: 12px;
+    color: var(--henjii-text-secondary);
+}
+
+.henjii-chart {
+    margin-top: 20px;
+}
+
+.henjii-chart h4 {
+    margin-bottom: 10px;
+}
+
+.henjii-chart-bars {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.henjii-chart-bars li {
+    margin-bottom: 10px;
+}
+
+.henjii-chart-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: var(--henjii-text-secondary);
+}
+
+.henjii-chart-bar {
+    height: 24px;
+    background-color: var(--henjii-primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 30px;
+    transition: width 0.3s ease;
+}
+
+.henjii-no-data {
+    text-align: center;
+    color: var(--henjii-text-secondary);
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* Quick Actions */
+.henjii-quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.henjii-action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--henjii-surface-light);
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--henjii-primary);
+    transition: all 0.2s ease;
+}
+
+.henjii-action-button:hover {
+    background-color: var(--henjii-surface);
+    color: var(--henjii-primary-hover);
+    transform: translateY(-2px);
+}
+
+.henjii-action-button .dashicons {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+/* Status Grid */
+.henjii-status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.henjii-status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--henjii-surface-light);
+    border-radius: 8px;
+}
+
+.henjii-status-label {
+    font-weight: 600;
+    color: var(--henjii-text);
+}
+
+/* Buttons */
+.henjii-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--henjii-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.henjii-button:hover {
+    background-color: var(--henjii-primary-hover);
+}
+
+.henjii-button-secondary {
+    background-color: var(--henjii-surface-light);
+    color: var(--henjii-text);
+    border: 1px solid var(--henjii-border);
+}
+
+.henjii-button-secondary:hover {
+    background-color: var(--henjii-surface);
+}
+
+.henjii-button-small {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.henjii-button-large {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/* Settings */
+.henjii-settings-container {
+    background-color: var(--henjii-surface);
+    border: 1px solid var(--henjii-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--henjii-shadow);
+    margin-bottom: 20px;
+}
+
+.henjii-settings-section {
+    padding: 20px;
+    border-bottom: 1px solid var(--henjii-border);
+}
+
+.henjii-settings-section:last-child {
+    border-bottom: none;
+}
+
+.henjii-settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--henjii-border);
+}
+
+/* Form Elements */
+.henjii-form-group {
+    margin-bottom: 15px;
+}
+
+.henjii-form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--henjii-text);
+}
+
+.henjii-form-input,
+.henjii-form-select,
+.henjii-form-textarea {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: var(--henjii-surface-light);
+    border: 1px solid var(--henjii-border);
+    border-radius: 4px;
+    color: var(--henjii-text);
+    font-size: 14px;
+}
+
+.henjii-form-input:focus,
+.henjii-form-select:focus,
+.henjii-form-textarea:focus {
+    outline: none;
+    border-color: var(--henjii-primary);
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.3);
+}
+
+.henjii-form-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Toggle Switch */
+.henjii-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.henjii-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.henjii-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--henjii-surface-light);
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.henjii-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--henjii-text);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.henjii-toggle input:checked + .henjii-toggle-slider {
+    background-color: var(--henjii-primary);
+}
+
+.henjii-toggle input:focus + .henjii-toggle-slider {
+    box-shadow: 0 0 1px var(--henjii-primary);
+}
+
+.henjii-toggle input:checked + .henjii-toggle-slider:before {
+    transform: translateX(26px);
+    background-color: white;
+}
+
+/* API Testing Feature */
+.henjii-api-test {
+    background-color: var(--henjii-surface);
+    border: 1px solid var(--henjii-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.henjii-api-test-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.henjii-api-test-header h3 {
+    margin: 0;
+}
+
+.henjii-api-test-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.henjii-api-test-endpoint {
+    grid-column: 1 / -1;
+}
+
+.henjii-api-test-method {
+    display: flex;
+    gap: 10px;
+}
+
+.henjii-api-test-method-button {
+    padding: 8px 12px;
+    background-color: var(--henjii-surface-light);
+    border: 1px solid var(--henjii-border);
+    border-radius: 4px;
+    color: var(--henjii-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.henjii-api-test-method-button.active {
+    background-color: var(--henjii-primary);
+    color: white;
+    border-color: var(--henjii-primary);
+}
+
+.henjii-api-test-params {
+    grid-column: 1 / -1;
+}
+
+.henjii-api-test-param-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.henjii-api-test-param-row input {
+    flex: 1;
+}
+
+.henjii-api-test-param-remove {
+    background-color: var(--henjii-error);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.henjii-api-test-add-param {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--henjii-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+}
+
+.henjii-api-test-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    grid-column: 1 / -1;
+}
+
+.henjii-api-test-result {
+    margin-top: 20px;
+    background-color: var(--henjii-surface-light);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.henjii-api-test-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--henjii-surface);
+    border-bottom: 1px solid var(--henjii-border);
+}
+
+.henjii-api-test-result-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.henjii-api-test-result-status.success {
+    background-color: var(--henjii-success);
+    color: white;
+}
+
+.henjii-api-test-result-status.error {
+    background-color: var(--henjii-error);
+    color: white;
+}
+
+.henjii-api-test-result-content {
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.henjii-api-test-result pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: var(--henjii-text);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .henjii-dashboard-cards,
+    .henjii-stats-grid,
+    .henjii-quick-actions,
+    .henjii-status-grid,
+    .henjii-api-test-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .henjii-api-test-param-row {
+        flex-direction: column;
+    }
+}
