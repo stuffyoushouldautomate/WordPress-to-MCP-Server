@@ -1,7 +1,7 @@
 
 # WordPress MCP – The Ultimate WordPress to Model Context Protocol Server Plugin
 
-**[Open Source]([url](https://github.com/stuffyoushouldautomate/WordPress-to-MCP-Server)) | [Cloud & Enterprise Licenses Available](mailto:hello@henjii.com)**
+**[Open Source]([url](https://github.com/stuffyoushouldautomate/WordPress-to-MCP-Server)) | [Custom Services Available](https://augments.art/schedule)**
 
 ---
 
@@ -14,17 +14,7 @@
 - **Open source** for everyone, with cloud and enterprise options for teams
 
 > "If you want to make your WordPress site AI-ready, this is the plugin you need."
-
----
-
-## 🆕 What's New in v2.0?
-- One-click API key generation (secure, random)
-- Always-on dark mode, Helvetica font, edge-to-edge UI
-- Streamlined dashboard and settings
-- Improved documentation and onboarding
-- Bug fixes and performance improvements
-
----
+--
 
 ## 💡 Why Use WordPress MCP?
 
@@ -63,13 +53,6 @@
 - **Custom Workflows:** Trigger WordPress functions (tools) directly from AI or automation apps.
 - **Enterprise Integrations:** Provide API access to internal teams, partners, and apps securely.
 - **Prompt Consistency:** Standardize AI outputs with pre-made prompts and templates.
-
----
-
-## 🎨 Fun Interactive Demo
-
-We created a live interactive UI that shows random use cases to help you imagine what’s possible with henjii:  
-👉 **Demo coming soon...** 
 
 ---
 
